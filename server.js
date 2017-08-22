@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    'article-one': {
+    'Article-one': {
         title: 'Article One | Soundar',
         heading: 'Article One',
         date: 'Sep 21, 2017',
@@ -21,7 +21,7 @@ var articles = {
                    This is the content for my first article - 1c
                </p>`        
     },
-    'article-two': {
+    'Article-two': {
         title: 'Article Two | Soundar',
         heading: 'Article Two',
         date: 'Sep 22, 2017',
@@ -36,7 +36,7 @@ var articles = {
                    This is the content for my second article - 2c
                </p>`    
     },
-    'article-three': {
+    'Article-three': {
         title: 'Article Three | Soundar',
         heading: 'Article Three',
         date: 'Sep 23, 2017',
