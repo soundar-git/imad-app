@@ -85,7 +85,7 @@ function createTemplate(data) {
            </div>
        </div>
     </body>
-</html>`
+</html>`;
 }
 
 app.get('/:articleName',function(req,res) {
