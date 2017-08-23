@@ -123,20 +123,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var pool = new Pool(config);
-app.get('/test-db',function(req,res) {
-    // make a select request 
-    // return the response with results
-    pool.query('SELECT * FROM sql_test',function(err,result) {
-       if (err) {
-           res.status(500),send(err,toSring());
-       }
-       else {
-           res.send(JSON.stringify(result));
-       }
-    })
-});
-
 //app.get('/Article-one',function(req,res) {
     //res.sendFile(path.join(__dirname,'ui','article-one.html'))
 //});
